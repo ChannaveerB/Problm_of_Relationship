@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.username">root</property>
+		<property name="connection.password">j2ee</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/many2many?createDatabaseIfNotExist=true</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="show_sql">true</property>
+		<property name="hbm2ddl.auto">update</property>
+		
+		<mapping class="com.app.por.ManyToMany.PassengerDTO"/>
+		<mapping class="com.app.por.ManyToMany.BusDTO"/>
+		
+		<!-- <mapping class="com.app.por.onetomany.ProblemDTO"/>
+		<mapping class="com.app.por.onetomany.PersonDTO"/>
+		 -->
+	<!-- 	<mapping class="com.app.por.StateDTO" />
+		<mapping class="com.app.por.CMDTO" />
+		 -->
+	</session-factory>
+</hibernate-configuration>
+		
+		<!--  <mapping class="com.app.por.OnetoOne.StateDTO"/>
+		<mapping class="com.app.por.OnetoOne.CMDTO"/>
+		-->
+		 <!--  <mapping class="com.app.por.OnetoMany.ProblemDTO"/>
+		<mapping class="com.app.por.OnetoMany.PersonDTO"/>  -->
+	<!--  	<mapping class="com.app.por.ManyToMany.PassengerDTO"/>
+		<mapping class="com.app.por.ManyToMany.BusDTO"/>   -->
+		 
+	<!-- 	<mapping class="com.app.por.StateDTO" />
+		<mapping class="com.app.por.CMDTO" />
+		 -->
+	</session-factory>
+</hibernate-configuration>
